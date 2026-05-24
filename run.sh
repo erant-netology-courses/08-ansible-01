@@ -6,7 +6,7 @@ sudo docker run -d --name ubuntu pycontribs/ubuntu sleep infinity
 sudo docker run -d --name fedora pycontribs/fedora sleep infinity
 
 # Запуск playbook
-ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+ansible-playbook -i inventory/prod.yml playbook/site.yml --ask-vault-pass
 
 # Остановка и удаление контейнеров
 docker rm -f centos7 ubuntu fedora

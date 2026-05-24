@@ -3,17 +3,18 @@
     hosts:
       centos7:
         ansible_connection: docker
-        # ansible_python_interpreter: /usr/bin/python3
+        ansible_remote_tmp: /tmp
   deb:
     hosts:
       ubuntu:
         ansible_connection: docker
-        # ansible_python_interpreter: /usr/bin/python3
+        ansible_remote_tmp: /tmp
+  fedora:
+    hosts:
+      fedora:
+        ansible_connection: docker
+        ansible_remote_tmp: /tmp
   local:
     hosts:
       localhost:
         ansible_connection: local
-  fed:
-    hosts:
-      fedora:
-        ansible_connection: docker

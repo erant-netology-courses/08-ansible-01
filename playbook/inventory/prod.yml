@@ -3,7 +3,9 @@
     hosts:
       centos7:
         ansible_connection: docker
+        ansible_python_interpreter: /usr/bin/python
   deb:
     hosts:
       ubuntu:
         ansible_connection: docker
+        ansible_python_interpreter: /usr/bin/python

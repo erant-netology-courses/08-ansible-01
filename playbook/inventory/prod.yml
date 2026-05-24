@@ -13,3 +13,7 @@
     hosts:
       localhost:
         ansible_connection: local
+  fed:
+    hosts:
+      fedora:
+        ansible_connection: docker
